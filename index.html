@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ticket NFT App</title>
+    <style>
+      body { font-family: sans-serif; margin: 2rem; }
+      button { margin: 0.5rem 0; }
+      input { margin: 0.5rem 0; }
+      label { display: block; margin-top: 1rem; }
+    </style>
+  </head>
+  <body>
+    <button id="connectButton">Connect Wallet</button>
+    <hr>
+    <button id="mintTicketButton">Mint Ticket</button>
+    <div id="mintStatus"></div>
+    <hr>
+    <label for="upgradeTokenId">Token ID to Upgrade:</label>
+    <input id="upgradeTokenId" type="number" placeholder="Enter Token ID" />
+    <button id="upgradeTicketButton">Upgrade Ticket</button>
+    <div id="upgradeStatus"></div>
+    <hr>
+    <label for="checkInTokenId">Token ID to Check In:</label>
+    <input id="checkInTokenId" type="number" placeholder="Enter Token ID" />
+    <button id="checkInButton">Check In</button>
+    <div id="checkInStatus"></div>
+    <hr>
+    <label for="tokenInfoId">Token ID for Info:</label>
+    <input id="tokenInfoId" type="number" placeholder="Enter Token ID" />
+    <button id="tokenInfoButton">Get Ticket Info</button>
+    <div id="tokenInfoDisplay"></div>
+    <hr>
+    <button id="getPriceButton">Get Current Ticket Price</button>
+    <div id="priceDisplay"></div>
+    <hr>
+    <button id="withdrawButton">Withdraw Funds (Owner Only)</button>
+    <div id="withdrawStatus"></div>
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
